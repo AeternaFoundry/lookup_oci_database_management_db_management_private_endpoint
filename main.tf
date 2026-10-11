@@ -1,0 +1,6 @@
+data "oci_database_management_db_management_private_endpoint" "database_management_db_management_private_endpoint_lookup" {
+  for_each = var.database_management_db_management_private_endpoint_lookup
+
+  db_management_private_endpoint_id = each.value.db_management_private_endpoint_id
+}
+
